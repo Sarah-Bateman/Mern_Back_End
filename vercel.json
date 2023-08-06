@@ -1,11 +1,15 @@
 {
     "version": 2,
-    "name": "Mern_Back_End",
     "builds": [
-       { "src": "app.js", "use": "@vercel/node" }
+      {
+        "src": "index.js",
+        "use": "@now/node"
+      }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "app.js" }
-    ],
-    "outputDirectory": "."
- }
+      {
+        "src": "/(.*)",
+        "dest": "index.js"
+      }
+    ]
+  }
