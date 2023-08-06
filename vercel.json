@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "name": "Mern_Back_End",
     "builds": [
        { "src": "app.js", "use": "@vercel/node" }
     ],
