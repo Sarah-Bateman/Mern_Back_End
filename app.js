@@ -1,7 +1,7 @@
 // app.js
 
 const express = require('express');
-const connectDB = require(path.join(process.cwd(), 'config/db'));
+//const connectDB = require(path.join(process.cwd(), 'config/db'));
 // const cors = require('cors');
 
 // routes
@@ -24,6 +24,8 @@ app.listen(port, () =>
     console.log(`Server running on port ${port}`));
 
 app.get('/', (req, res) => res.send('Hello world!'));
+
+app.get('/cwd', (req, res) => res.send(process.cwd().toString()));
 
 // use Routes
 // app.use('/api/books', books);
