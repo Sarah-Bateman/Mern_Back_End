@@ -1,7 +1,7 @@
 // app.js
 
 const express = require('express');
-const connectDB = require('config/db');
+const connectDB = require(path.join(process.cwd(), 'config/db'));
 // const cors = require('cors');
 
 // routes
